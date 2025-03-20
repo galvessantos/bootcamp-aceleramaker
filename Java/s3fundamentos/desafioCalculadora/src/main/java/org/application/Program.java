@@ -5,6 +5,9 @@ import java.util.Scanner;
 
 public class Program {
     public static void main(String[] args) {
+
+        //Exercício para a criação de uma calculadora utilizando apenas os conceitos aprendidos na seção de Fundamentos.
+
         Locale.setDefault(Locale.US);
 
         Scanner sc = new Scanner(System.in);
