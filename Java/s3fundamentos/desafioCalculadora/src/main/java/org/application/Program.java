@@ -6,22 +6,29 @@ import java.util.Scanner;
 public class Program {
     public static void main(String[] args) {
 
-        //Exercício para a conversão de Fahrenheit  para Celsius utilizando os conceitos aprendidos na seção de Fundamentos.
+        //Exercício para criação de uma Calculadora utilizando apenas os comandos aprendidos na seção Fundamentos.
 
         Locale.setDefault(Locale.US);
 
         Scanner sc = new Scanner(System.in);
 
-        double fahrenheit;
+        double num1, num2, result;
+        String op;
 
-        System.out.println("=======CONVERSÃO DE FAHRENHEIT PARA CELSIUS=======");
+        System.out.print("Insira o primeiro número: ");
+        num1 = sc.nextDouble();
+        System.out.print("Insira o segundo número: ");
+        num2 = sc.nextDouble();
+        System.out.print("\nSOMA: + \nSUBTRAÇÃO: - \nDIVISÃO: / \nMULTIPLICAÇÃO: * \nMÓDULO: %  \n\nInsira o tipo de operação: ");
+        op = sc.next();
 
-        System.out.print("Digite a temperatura em Fahrenheit: ");
-        fahrenheit = sc.nextDouble();
+        result = "+".equals(op) ? num1 + num2 : 0;
+        result = "-".equals(op) ? num1 - num2 : result;
+        result = "/".equals(op) ? num1 / num2 : result;
+        result = "*".equals(op) ? num1 * num2 : result;
+        result = "%".equals(op) ? num1 % num2 : result;
 
-        double celsius = (fahrenheit - 32) / 1.8;
-
-        System.out.printf("A temperatura em Celsius é: %.4f°", celsius);
+        System.out.printf("%.2f %s %.2f = %.2f", num1, op, num2, result);
 
         sc.close();
     }
