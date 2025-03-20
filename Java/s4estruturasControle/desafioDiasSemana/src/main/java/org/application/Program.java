@@ -41,7 +41,7 @@ public class Program {
         else if (diaSemana.equalsIgnoreCase("sábado")) {
             System.out.println("Você digitou o 7° dia da semana!");
         }
-        
+
         sc.close();
     }
 }
