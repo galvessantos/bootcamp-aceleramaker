@@ -3,6 +3,16 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 
+    /*
+      Decidi adicionar ao exercício:
+
+       1. Getters e Setters para encapsular os atributos das classes.
+       2. Interação com o usuário para permitir entradas dinâmicas de nome, peso, alimentos e calorias.
+       3. O uso do laço do-while para repetir a ação de adicionar alimentos até o usuário decidir parar.
+
+       Essas mudanças têm como objetivo aumentar a complexidade do exercício, ao mesmo tempo em que pratico conceitos vistos nas seções anteriores.
+    */
+
 public class Jantar {
     public static void main(String[] args) {
 
