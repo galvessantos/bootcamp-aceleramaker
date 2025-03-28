@@ -153,12 +153,11 @@ import java.util.function.UnaryOperator;
 UnaryOperator<Double> impostoMunicipal =
         preco -> preco >= 2500 ? preco * 1.085 : preco;
 ```
-## 📂 Documentação
+## 📂 Documentação Oficial
 Consulte a documentação oficial de interfaces funcionais em Java:
-[Java 8 Functional Interfaces](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html).
+🔗 [Java 8 Functional Interfaces](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html).
 
 ---
 
-🗨️ **Autor:** Gabriel Alves
 
 
